@@ -1,0 +1,9 @@
+---
+- name: Leapp Pre-upgrade Analysis
+  hosts: all
+  become: true
+  tasks:
+    - name: Run analysis
+      ansible.builtin.import_role:
+        name: infra.leapp.analysis
+

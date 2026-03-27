@@ -1,0 +1,9 @@
+---
+- name: Phase 2 - Apply Remediation
+  hosts: all
+  become: true
+  tasks:
+    - name: Run Leapp remediation
+      ansible.builtin.import_role:
+        name: infra.leapp.remediate
+

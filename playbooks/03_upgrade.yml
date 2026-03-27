@@ -1,0 +1,12 @@
+---
+- name: Phase 3 - Perform In-Place Upgrade
+  hosts: all
+  become: true
+  vars:
+    # Ensure the upgrade doesn't timeout during the long reboot process
+    ansible_reboot_timeout: 3600
+  tasks:
+    - name: Run Leapp upgrade
+      ansible.builtin.import_role:
+        name: infra.leapp.upgrade
+

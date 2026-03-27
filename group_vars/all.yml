@@ -1,0 +1,13 @@
+---
+# Upgrade Configuration
+leapp_upgrade_type: "cdn" # Options: cdn, satellite, rhsm, or custom
+leapp_target_version: "9.4" # Target version (e.g., 8.10 if on RHEL 7, or 9.4 if on RHEL 8)
+
+# Pre-flight settings
+leapp_preflight_pkg_update: true
+leapp_answerfile_path: "/var/log/leapp/answerfile"
+
+# Report Handling
+leapp_analysis_fetch_results: true
+leapp_analysis_results_dir: "./reports"
+
