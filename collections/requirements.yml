@@ -3,6 +3,9 @@ collections:
   - name: infra.leapp
     version: 1.7.0  # Use the latest stable version
   - name: ansible.posix
+    version: ">=1.0.0"
   - name: community.general
+    version: ">=1.0.0"
   - name: redhat.rhel_system_roles
+    version: ">=1.0.0"
 
