@@ -6,4 +6,5 @@
     - name: Run analysis
       ansible.builtin.import_role:
         name: infra.leapp.analysis
+      check_mode: false
 
