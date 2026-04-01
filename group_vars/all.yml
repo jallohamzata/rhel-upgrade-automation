@@ -1,7 +1,7 @@
 ---
 # Upgrade Configuration
 leapp_upgrade_type: "cdn" # Options: cdn, satellite, rhsm, or custom
-leapp_target_version: "9.4" # Target version (e.g., 8.10 if on RHEL 7, or 9.4 if on RHEL 8)
+leapp_target_version: "10.0" # Target version (e.g., 8.10 if on RHEL 7, or 9.4 if on RHEL 8, or 10.0 if on RHEL 9)
 
 # Pre-flight settings
 leapp_preflight_pkg_update: true
